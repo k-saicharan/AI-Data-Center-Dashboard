@@ -23,7 +23,4 @@ Research synthesized from McKinsey Global Institute, International Energy Agency
 
 ---
 
-**Research Period**: Q4 2024 - Q1 2025  
-**Analyst**: K Saicharan
-
 
