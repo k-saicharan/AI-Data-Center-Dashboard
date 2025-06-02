@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Data Center Growth Dashboard 2025-2035</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="container">
+            <h1>AI Data Center Growth Dashboard 2025-2035</h1>
+            <p class="header-subtitle">Comprehensive Analysis of Market Opportunities and Infrastructure Demands</p>
+        </div>
+    </header>
+
+    <nav class="dashboard-nav">
+        <div class="container">
+            <div class="nav-tabs">
+                <button class="nav-tab active" data-section="executive-summary">Executive Summary</button>
+                <button class="nav-tab" data-section="market-growth">Market Growth</button>
+                <button class="nav-tab" data-section="regional-opportunities">Regional Analysis</button>
+                <button class="nav-tab" data-section="business-opportunities">Business Opportunities</button>
+                <button class="nav-tab" data-section="power-sustainability">Power & Sustainability</button>
+                <button class="nav-tab" data-section="insights">Key Insights</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard-main">
+        <div class="container">
+            <!-- Executive Summary Section -->
+            <section id="executive-summary" class="dashboard-section active">
+                <h2>Executive Summary</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">$13.6B</div>
+                        <div class="stat-label">Current AI Data Center Market (2024)</div>
+                        <div class="stat-change">+28.5% YoY</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">$101.4B</div>
+                        <div class="stat-label">Projected Market Size (2030)</div>
+                        <div class="stat-change">642% Growth</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">60 GW</div>
+                        <div class="stat-label">Current Global Power Demand</div>
+                        <div class="stat-change">20% AI Share</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">139 GW</div>
+                        <div class="stat-label">Projected Power Demand (2030)</div>
+                        <div class="stat-change">65% AI Share</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">$775B</div>
+                        <div class="stat-label">Total Investment Opportunities</div>
+                        <div class="stat-change">By 2034</div>
+                    </div>
+                </div>
+
+                <div class="summary-content">
+                    <div class="summary-text">
+                        <h3>Market Overview</h3>
+                        <p>The AI data center market is experiencing unprecedented growth, driven by the explosive demand for AI computing power, machine learning applications, and cloud services. With a projected CAGR of 42.9%, the market is set to expand from $13.6 billion in 2024 to over $101 billion by 2030.</p>
+                        
+                        <h4>Key Growth Drivers:</h4>
+                        <ul>
+                            <li>Exponential increase in AI model complexity and training requirements</li>
+                            <li>Rising adoption of generative AI across enterprises</li>
+                            <li>Expansion of edge computing and real-time AI applications</li>
+                            <li>Growing demand for high-performance computing infrastructure</li>
+                        </ul>
+                    </div>
+                    <div class="summary-image">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/1428cbe420516ee187b62cc1446b7f1c/gpt4o_images/d6e7rvaoxiclqop0wpmc.png" alt="AI data center growth infographic" class="infographic">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Market Growth Section -->
+            <section id="market-growth" class="dashboard-section">
+                <h2>Market Growth Analysis</h2>
+                <div class="chart-controls">
+                    <div class="control-group">
+                        <label for="metric-selector">View Metric:</label>
+                        <select id="metric-selector" class="form-control">
+                            <option value="market">AI Data Center Market Size</option>
+                            <option value="power">Global Power Demand</option>
+                            <option value="investment">Total Investment</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="growthChart" width="400" height="200"></canvas>
+                </div>
+                <div class="growth-metrics">
+                    <div class="metric-card">
+                        <span class="metric-title">Market CAGR</span>
+                        <span class="metric-value" id="market-cagr">42.9%</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-title">Power CAGR</span>
+                        <span class="metric-value" id="power-cagr">15.1%</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-title">Investment CAGR</span>
+                        <span class="metric-value" id="investment-cagr">35.8%</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Regional Opportunities Section -->
+            <section id="regional-opportunities" class="dashboard-section">
+                <h2>Regional Growth Opportunities</h2>
+                <div class="chart-container">
+                    <canvas id="regionalChart" width="400" height="300"></canvas>
+                </div>
+                <div class="regional-grid">
+                    <div class="regional-card" data-region="north-america">
+                        <h4>North America</h4>
+                        <div class="regional-stats">
+                            <div class="regional-stat">
+                                <span class="stat-label">Growth Rate (CAGR)</span>
+                                <span class="stat-value">15.2%</span>
+                            </div>
+                            <div class="regional-stat">
+                                <span class="stat-label">2025 Investment</span>
+                                <span class="stat-value">$35B</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regional-card" data-region="asia-pacific">
+                        <h4>Asia-Pacific</h4>
+                        <div class="regional-stats">
+                            <div class="regional-stat">
+                                <span class="stat-label">Growth Rate (CAGR)</span>
+                                <span class="stat-value">18.5%</span>
+                            </div>
+                            <div class="regional-stat">
+                                <span class="stat-label">2025 Investment</span>
+                                <span class="stat-value">$25B</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regional-card" data-region="europe">
+                        <h4>Europe</h4>
+                        <div class="regional-stats">
+                            <div class="regional-stat">
+                                <span class="stat-label">Growth Rate (CAGR)</span>
+                                <span class="stat-value">12.8%</span>
+                            </div>
+                            <div class="regional-stat">
+                                <span class="stat-label">2025 Investment</span>
+                                <span class="stat-value">$15B</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regional-card" data-region="latin-america">
+                        <h4>Latin America</h4>
+                        <div class="regional-stats">
+                            <div class="regional-stat">
+                                <span class="stat-label">Growth Rate (CAGR)</span>
+                                <span class="stat-value">22.1%</span>
+                            </div>
+                            <div class="regional-stat">
+                                <span class="stat-label">2025 Investment</span>
+                                <span class="stat-value">$6B</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Business Opportunities Section -->
+            <section id="business-opportunities" class="dashboard-section">
+                <h2>Business Investment Opportunities</h2>
+                <div class="opportunities-controls">
+                    <div class="control-group">
+                        <label for="sort-selector">Sort By:</label>
+                        <select id="sort-selector" class="form-control">
+                            <option value="growth">Growth Rate</option>
+                            <option value="market-size">Market Size 2030</option>
+                            <option value="attractiveness">Investment Score</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="opportunities-grid" id="opportunities-grid">
+                    <!-- Opportunity cards will be populated by JavaScript -->
+                </div>
+                <div class="chart-container">
+                    <canvas id="opportunitiesChart" width="400" height="300"></canvas>
+                </div>
+            </section>
+
+            <!-- Power & Sustainability Section -->
+            <section id="power-sustainability" class="dashboard-section">
+                <h2>Power Consumption & Sustainability</h2>
+                <div class="power-charts">
+                    <div class="chart-container">
+                        <h3>Power Consumption Trends</h3>
+                        <canvas id="powerChart" width="400" height="250"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <h3>Sustainability Metrics</h3>
+                        <canvas id="sustainabilityChart" width="400" height="250"></canvas>
+                    </div>
+                </div>
+                <div class="sustainability-metrics">
+                    <div class="sustainability-card">
+                        <h4>Carbon Footprint</h4>
+                        <div class="metric-large">350M</div>
+                        <div class="metric-unit">Tonnes CO2 by 2030</div>
+                    </div>
+                    <div class="sustainability-card">
+                        <h4>Renewable Energy</h4>
+                        <div class="metric-large">70%</div>
+                        <div class="metric-unit">Target by 2030</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Insights Section -->
+            <section id="insights" class="dashboard-section">
+                <h2>Key Insights & Recommendations</h2>
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <h3>📈 Market Growth</h3>
+                        <p>The AI data center market will grow 7.4x by 2030, presenting massive opportunities across all segments.</p>
+                        <div class="insight-action">
+                            <strong>Action:</strong> Focus on high-growth segments like Edge Computing (30.2% CAGR) and Cooling Technology (28.5% CAGR).
+                        </div>
+                    </div>
+                    <div class="insight-card">
+                        <h3>🌍 Regional Opportunities</h3>
+                        <p>Latin America shows highest growth potential (22.1% CAGR) while North America offers largest absolute market size.</p>
+                        <div class="insight-action">
+                            <strong>Action:</strong> Consider dual strategy: established markets for scale, emerging markets for growth.
+                        </div>
+                    </div>
+                    <div class="insight-card">
+                        <h3>⚡ Power Infrastructure</h3>
+                        <p>AI workloads will consume 650 TWh by 2030, requiring massive power infrastructure investment ($75B opportunity).</p>
+                        <div class="insight-action">
+                            <strong>Action:</strong> Invest in grid modernization and renewable energy integration.
+                        </div>
+                    </div>
+                    <div class="insight-card">
+                        <h3>🔄 Sustainability Challenge</h3>
+                        <p>Despite 70% renewable target, absolute emissions will continue rising due to scale.</p>
+                        <div class="insight-action">
+                            <strong>Action:</strong> Prioritize energy efficiency and innovative cooling solutions.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="download-section">
+                    <h3>Export Data & Reports</h3>
+                    <div class="download-buttons">
+                        <button class="btn btn--primary" onclick="exportData('market-forecast')">Download Market Forecast</button>
+                        <button class="btn btn--primary" onclick="exportData('regional-data')">Download Regional Data</button>
+                        <button class="btn btn--primary" onclick="exportData('business-opportunities')">Download Opportunities</button>
+                        <button class="btn btn--primary" onclick="exportData('power-data')">Download Power Data</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="dashboard-footer">
+        <div class="container">
+            <p>&copy; 2025 AI Data Center Growth Dashboard. Data sources: Industry research and market analysis.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
