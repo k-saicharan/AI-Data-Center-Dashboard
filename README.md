@@ -1,5 +1,4 @@
 # AI-Data-Center-Dashboard
-# AI Data Center Growth Analysis Dashboard
 
 **[🚀 View Live Dashboard](https://k-saicharan.github.io/AI-Data-Center-Dashboard/)**
 
